@@ -1,0 +1,20 @@
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Order</th>
+        <th>Name</th>
+        <th>Monthly</th>
+        <th class="text-right">Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tdd of thingstodo">
+        <td>{{tdd.order}}</td>
+        <td>{{tdd.name}}</td>
+        <td>{{tdd.monthly}}</td>
+        <td class="text-right">{{tdd.cost | currency:'USD':true:'1.2'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
