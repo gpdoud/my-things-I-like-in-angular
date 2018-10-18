@@ -10,7 +10,7 @@ import { Thingtodo } from './thingstodo';
 })
 export class AppComponent {
 
-	thingtodo: Thingtodo = new Thingtodo(0, '', 0, 0);
+	thingtodo: Thingtodo = new Thingtodo(0, 'default name', 0, 0);
 
 	thingstodo: Thingtodo[] = [
 		new Thingtodo(1, "Spelunking", 3, 100),
